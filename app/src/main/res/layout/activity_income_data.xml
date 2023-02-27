@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Incomedata">
+    <TextView
+        android:id="@+id/add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add income"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/incress"
+        android:layout_width="190dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#C5F49C"
+        android:layout_below="@id/amount"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#C5F49C"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/cross"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add income"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mince"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/incress"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#BA3D3D"
+        android:layout_below="@id/amount"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#BA3D3D"
+            android:scaleType="centerCrop"
+            android:src="@drawable/minus"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add expence"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="enter amuont"
+        android:inputType="number"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+
+
+
+
+</RelativeLayout>
